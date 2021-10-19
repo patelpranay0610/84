@@ -33,38 +33,34 @@ function my_keydown(e)
 			document.getElementById("d1").innerHTML="you pressed aplhabet key";
 			console.log("alhatet key");
 
+		}
+		else if (keypressed>=48&&keypress<=57){
+
 			numberkey();
 			document.getElementById("d1").innerHTML="you pressed number key";
 			console.log("number key");
-
+		}
+		else if (keypressed>=37&&keypress<=40){
 			arrowkey();
 			document.getElementById("d1").innerHTML="you pressed arrow key";
 			console.log("arrow key");
+		}
+		else if ((keypressed==17)||(keypressed==18||keypressed==27)){
+
 
 			specialkey();
 			document.getElementById("d1").innerHTML="you pressed special key";
 			console.log("special key");
-
+		}
+		else{
 			otherkey();
 			document.getElementById("d1").innerHTML="you pressed otherkey";
 			console.log("other key");
 		}
-	
-		otherkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+	}
 		
-		specialkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or special key";
+	
 
-		arrowkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or arrow key";
-
-		numberkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or number key";
-
-		otherkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or other key";
-}
 
 function aplhabetkey()
 {
